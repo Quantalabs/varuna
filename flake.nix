@@ -122,6 +122,7 @@
         nvidia = {
           enabled = false;
           intelBusId = "PCI:0:2:0";
+          nvidiaBusId = "";
         };
       };
 
