@@ -18,4 +18,4 @@ jobs:
           pr-title: "build(lock): update"
           pr-labels: |
             lock
-          pr-assignees: quantum9innovation
+          pr-assignees: quantalabs
