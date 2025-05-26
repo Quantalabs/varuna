@@ -118,12 +118,7 @@
 
       # Power-efficient NVIDIA GPU settings
       graphics = {
-        opengl = true;
-        nvidia = {
-          enabled = false;
-          intelBusId = "PCI:0:2:0";
-          nvidiaBusId = "";
-        };
+        opengl = false;
       };
 
       # System overrides
