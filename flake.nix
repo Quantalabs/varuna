@@ -97,6 +97,9 @@
       user = "arvind"; # Login username of primary user
       name = "Arvind Venkatesh"; # Full name of primary user
 
+      # Secure boot
+      secureboot.enabled = false;
+
       # Git configuration
       git = {
         name = "Arvind Venkatesh";
