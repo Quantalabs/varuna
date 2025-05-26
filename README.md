@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD013 -->
 
-# ነጻነት (netsanet)
+# varuna
 
-My Alienware m16 R2 laptop's [QuasarOS](https://github.com/quantum9innovation/QuasarOS) user configuration
+Nix configuration for my HP Pavilion 15-cs1065.
