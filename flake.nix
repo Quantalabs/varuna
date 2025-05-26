@@ -15,7 +15,7 @@
   # You should include a specific version of this flake as an input
   # in your system configuration flake and pipe its output to the `make`
   # function to build your system.
-  description = "Quasar configuration flake for Netsanet";
+  description = "Nix configuration flake for Varuna";
 
   inputs = {
     # QuasarOS uses the nixpkgs unstable channel,
@@ -93,36 +93,35 @@
       });
 
       # User configuration
-      hostname = "netsanet"; # Identify the system for networking tasks
-      user = "ananth"; # Login username of primary user
-      name = "Ananth"; # Full name of primary user
+      hostname = "varuna"; # Identify the system for networking tasks
+      user = "arvind"; # Login username of primary user
+      name = "Arvind Venkatesh"; # Full name of primary user
 
       # Git configuration
       git = {
-        name = "Ananth Venkatesh";
-        email = "dev.quantum9innovation@gmail.com";
+        name = "Arvind Venkatesh";
+        email = "arvindvenk123@gmail.com";
       };
 
       # Meta configuration
-      flake = "/home/${user}/gh/q9i/nixos";
+      flake = "/home/${user}/projects/nix/nixos";
 
       # Import hardware scan (device-specific)
       hardware = import ./hardware-configuration.nix;
       hyprland.monitors = [
-        "DP-1,2560x1440@165,1920x0,auto"
-        "HDMI-A-1,1920x1080@60,0x0,1"
+        "eDP-1,disable"
+        "HDMI-A-1,highres,auto,1.5"
       ];
 
       # Internationalization properties
-      locale = "es_US.UTF-8";
+      locale = "en_US.UTF-8";
 
       # Power-efficient NVIDIA GPU settings
       graphics = {
         opengl = true;
         nvidia = {
-          enabled = true;
-          intelBusId = "PCI:00:02:0";
-          nvidiaBusId = "PCI:01:00:0";
+          enabled = false;
+          intelBusId = "PCI:0:2:0";
         };
       };
 
